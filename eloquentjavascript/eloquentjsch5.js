@@ -19,16 +19,33 @@ console.log(some([2, 3, 4], isNaN));
 
 
 // FLATTENING:
-var reduce = function(array,combine) {
-	return combine(array);
+var reduce = function(array,concat) {
+
+	return concat(array);
 };
 
 nums = [[3,45,724],[695,45],[33,2,514],[684,55,90],[64,3]];
-
-console.log(reduce(nums,function(array) {
+var concat = function(array) {
 	var newArr = [];
 	for(var i = 0; i < array.length; i++) {
-		newArr.push(array[i]);
+		for(var x = 0; x < array[i].length; x++) {
+				newArr.push(array[i][x]);
+		}
 	}
+	console.log(newArr);
 	return newArr;
-}));
+}
+reduce(nums,concat);
+
+var combine = function (array) {
+	var newArr = [];
+	for(var i = 0; i < array.length; i++) {
+		for(var x = 0; x < array[i].length; x++) {
+				newArr.push(array[i][x]);
+		}
+	}
+	console.log(newArr);
+	return newArr;
+}
+
+combine(nums);
