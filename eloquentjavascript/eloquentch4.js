@@ -33,8 +33,7 @@ console.log(testRange); //logs testRange to the console
 //write a func that returns the sum of all the numbers in an array
 var sum = function(array) { //declare the var sum, takes one parameter, 'array'
 	arrSum  = 0;			//beginning value to have
-	for(var i = 0; i < array.length; i++) { //iterates through each value in the array
-		arrSum = array[i] + arrSum;	//adds each value to
+	for(var i = 0; i < array.length; i++) { //iterates through each value in the array		// arrSum = array[i] + arrSum;	//adds each value to
 	}
 	return arrSum;
 };

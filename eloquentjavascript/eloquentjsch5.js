@@ -51,7 +51,7 @@ var combine = function (array) {
 combine(nums);
 
 
-// map
+// map:
 nums = [3,45,724,695,45];
 
 var map = function(array,cb) {
@@ -72,7 +72,7 @@ var cubed = function(n) {
 console.log(map(nums,square));
 console.log(map(nums,cubed));
 
-// map calls refactored
+// map calls refactored:
 nums2 = [3,45,724,695,45];
 console.log(map(nums2,function(n) {
 	return n * n;
