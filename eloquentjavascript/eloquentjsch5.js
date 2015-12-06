@@ -49,3 +49,34 @@ var combine = function (array) {
 }
 
 combine(nums);
+
+
+// map
+nums = [3,45,724,695,45];
+
+var map = function(array,cb) {
+  for(var i = 0; i < array.length; i++) {
+		array[i] = cb(array[i]);
+	}
+	return array;
+};
+
+var square = function(n) {
+	return n * n
+};
+
+var cubed = function(n) {
+	return n * n * n
+}
+
+console.log(map(nums,square));
+console.log(map(nums,cubed));
+
+// map calls refactored
+nums2 = [3,45,724,695,45];
+console.log(map(nums2,function(n) {
+	return n * n;
+}))
+console.log(map(nums2,function(n) {
+	return n * n * n
+}));
