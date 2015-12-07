@@ -1,4 +1,5 @@
 // REDUCE ARRAY METHOD:
+// written by: AJ!!!!!!!!
 /////////////////////////////////////////////////////////////////////////////
 // first we decare a var, assign it to a func, it takes 3 params, the array we
 // want to work on, the way we want to combine them(callback), and a starting
@@ -37,7 +38,7 @@ var square = function(a,b) {
   return (a * a) + b;
 };
 
-// declaring the variables...
+// declaring and assigning the variables...
 var arrAdd = reduce(testArr1,sum,0)
 var arrAddSquare = reduce(testArr1,square,0);
 
