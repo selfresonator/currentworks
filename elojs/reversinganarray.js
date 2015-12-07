@@ -7,4 +7,5 @@ function reverseArray(array) {
 };
 
 var testArr = [24,631,4,49025];
-console.log(reverseArray(testArr));
+var test = reverseArray(testArr)
+console.log(test);
