@@ -1,11 +1,45 @@
 //  CH 5 EXERCISES
 //  EVERY AND SOME:
+// for every a for loopshould run through every array,
+// if the new array in it has passed every function, it will return true if
+// compared to the original array. 'some' should check to see if the new array
+// contains any elements at all, if so, it will return true.
 var every = function(array,predicate) {
-	predicate ? console.log(true) : console.log(false)
-}
+	var newArr = [];
+	for(var i = 0; i < array.length; i++) {
+		if(predicate(array[i]) {
+			newArr.push(newArr[i])
+		} };
+	newArr === array ? return true : return false;
+	};
+};
 
+//var forEach = function(array,action) {
+//	for(var i = 0; i < array.length; i++) {
+//		action(array[i]);
+//	}
+//};
 console.log(every([NaN, NaN, NaN], isNaN));
 console.log(every([NaN, NaN, 4], isNaN));
+
+//////////
+var every = function(array,predicate) {
+	var newArr = [];
+	for(var i = 0; i < array.length; i++) {
+		if(predicate(array[i])) {
+			return true;
+		}
+	}
+};
+
+//var forEach = function(array,action) {
+//	for(var i = 0; i < array.length; i++) {
+//		action(array[i]);
+//	}
+//};
+console.log(every([NaN, NaN, NaN], isNaN));
+console.log(every([NaN, NaN, 4], isNaN));
+//////////////
 
 var some = function(array,predicate) {
 
