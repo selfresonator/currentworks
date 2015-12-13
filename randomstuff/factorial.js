@@ -13,3 +13,24 @@ var factorial = function(thing) {
 //factorials are numbers derived from multiplying all
 
 console.log(factorial(num));
+
+
+
+
+
+
+
+
+
+
+/* stringy
+var = function(size) {
+    for(var i = size)
+};*/
+var additive = function(num) {
+  var newNum = 0
+  for(var i = 0; i <= num; i++) {
+    newNum += newNum + i;
+  }
+  return newNum;
+};
