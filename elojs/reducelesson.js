@@ -17,7 +17,7 @@
 };
 
 // here is a typical sum function, to combine the array values with.
-var sum = function(a,b) {
+var add = function(a,b) {
     return a + b + b;
 };
 
@@ -72,8 +72,7 @@ var concat = function(arr) {
   return conArr;
 };
 
-var nums = [[3,45,724],[695,45],[33,2,514],[684,55,90],[64,3]];
-
+var nums = [3,45,724,695,45,33,2,514]
 console.log(reduce(nums,concat,0)); */
 
 var longestWord = function(array) {
